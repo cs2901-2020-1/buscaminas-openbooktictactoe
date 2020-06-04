@@ -1,3 +1,5 @@
+//import Tablero.Tablero;
+
 public class Ventana{
     //Atributos
 

@@ -1,5 +1,3 @@
-//import Tablero.Tablero;
-//import Ventana.Ventana;
 import java.util.Scanner;
 
 public class Juego{
@@ -31,8 +29,8 @@ public class Juego{
     }
     public boolean validate(int x,int y){
         if( (tablero.tablero[x][y]).mina == true){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }

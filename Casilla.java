@@ -1,5 +1,6 @@
 
 
+
 class Casilla{
     public boolean visible = false;
     public boolean mina  = false;
