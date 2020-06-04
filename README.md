@@ -1,2 +1,3 @@
 # Buscaminas - Open Book
-buscaminas-openbooktictactoe created by GitHub Classroom
+Game test
+![](test.png)
