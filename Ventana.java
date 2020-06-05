@@ -5,10 +5,20 @@ public class Ventana{
 
     //Metodos
     void imprimirTablero(Tablero tablero){
-        for(int i = 0; i < tablero.tamano; i++){
-            for(int j = 0; j < tablero.tamano; j++){
-                if (tablero.tablero[i][j].visible == true){
-                    if (tablero.tablero[i][j].mina == true){
+
+      int n = tablero.tamano;
+        for(int i = 0; i < 2*n -1; i++){
+            for(int j = 0; j < 2*n -1; j++){
+                if(j%2==1 &&	i%2 == 0){
+                  System.out.print("|");
+                }
+                else if (i%2 == 1){
+                  System.out.print("-");
+                }
+                 
+                else if(tablero.tablero[i/2][j/2].visible == true){
+
+                    if (tablero.tablero[i/2][j/2].mina == true){
                         System.out.print("O");
                     } else {
                         System.out.print(" ");
